@@ -1,0 +1,57 @@
+.comando {
+	font-size:1.2 em;
+	font-style:italic;
+	font-weight:bolder;
+}
+.ejemplocorrecto {
+	border-top:5px solid  PaleGreen;
+	border-bottom:5px solid  PaleGreen;
+	margin:1em 0;
+}
+.ejemploincorrecto {
+	border-top:5px solid LightYellow;
+	border-bottom:5px solid  LightYellow;
+	margin:1em 0;
+}
+.atencion{
+	border-top:5px solid  Bisque;
+	border-bottom:5px solid Bisque;
+	margin:1em 0;
+}
+
+.curiosidad{
+	border-top:1px dotted  DarkOrange;
+	border-bottom:1px dotted DarkOrange;
+	margin:1em 0;
+}
+
+.consejos{
+	border-top:5px solid LightSalmon;
+	border-bottom:5px solid LightSalmon;
+	margin:1em 0;
+}
+.limitacion{
+	border-top:5px solid LightCyan;
+	border-bottom:5px solid LightCyan;
+	margin:1em 0;
+}
+
+.caption {
+	font-size:0.8em;
+	padding:0 0 2em 0;
+	color:LightYellow;
+	padding:0 1em 1em
+}
+
+img {
+	max-width:80%;
+	padding:2em 1em 1em
+}
+
+li{
+	padding:1em 0	
+}
+
+em {
+	font-style: italic;
+}

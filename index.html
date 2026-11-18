@@ -1,0 +1,1013 @@
+<html>
+
+<head>
+<title>Guía para la creación de gráficos estadísticos accesibles con Microsoft Excel 2019</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://www.w3.org/StyleSheets/Core/Chocolate" type="text/css">
+<link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body lang="es">
+
+<h1 "titulo" >Guía para la creación de gráficos estadísticos accesibles con Microsoft Excel 2019</h1>
+
+</div>
+
+<p><img src="imatges/image001.jpg"
+alt="Colección Guías de Contenido accesible. El símbolo es un candado abierto con el logo de la Universidad de Barcelona. "></p>
+
+<p>Este documento tiene una licencia <em><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.ca">Reconocimiento - No Comercial - Compartir Igual - 4.0 de Creative Commons</a>.</em> Se permite su reproducción, distribución y comunicación pública siempre que se cite su autor y no se haga un uso comercial. La creación de obras derivadas también está permitida siempre que se difundan con la misma licencia. </p>
+
+<p>Autores</p>
+
+<p>Rubén Alcaraz Martínez </p>
+
+<p>Afra Pascual Almenara </p>
+
+<p>Mireia Ribera Turró</p>
+
+<p>Primera edición en castellano: Barcelona, enero de 2023. Primera edición web: Barcelona, septiembre de 2026. </p>
+
+<h2>1.1 Presentación</h2>
+
+<p>Esta guía es una <em>introducción</em> a la creación de gráficos estadísticos accesibles con la versión de escritorio de Microsoft Excel 2019.</p>
+
+<p>Los programas de hojas de cálculo permiten el análisis y almacenamiento de datos tabulares, así como la generación de gráficos estadísticos a partir de los mismos. Mientras que las tablas interactúan con nuestro sistema verbal, los gráficos lo hacen con nuestro sistema visual, mucho más rápido a la hora de procesar información <a href="#bib1">[1]</a>. Un gráfico bien diseñado permite expresar la información de manera más eficiente que una tabla de datos. Sin embargo, para llegar a todas las audiencias, debemos garantizar su accesibilidad.</p>
+
+<p>En el caso de Microsoft Excel, desde su aparición en 1985, este programa ha ido añadido nuevas funcionalidades y opciones relacionadas directa o indirectamente con la accesibilidad para asegurar la creación de hojas de cálculo usables para personas con discapacidad.</p>
+
+<p>El <em>objetivo de esta guía</em> es reunir todas estas funcionalidades y opciones en un documento que muestra, paso a paso <em>la creación de gráficos accesibles a partir de datos tabulares</em>.</p>
+
+<p>Si bien se centra en pautas y recomendaciones generales aplicables a <em>cualquier tipo de gráfico</em>, los ejemplos que encontrarás se basan en los gráficos de uso más común: barras, barras apiladas, histogramas, líneas, circulares, de anillos, radiales, de dispersión, y de cajas y bigotes. Aunque el objetivo de esta guía no es el de instruir al lector sobre cuál es el mejor tipo de gráfico para cada situación, sí se ofrece una breve descripción de las situaciones comunicativas en las que acostumbran a usarse. La guía también contempla la creación de <em>tablas de datos accesibles</em>, necesarias no sólo por ser la fuente de los datos a partir de la que se generan los gráficos, sino también como alternativa accesible para determinados perfiles de usuarios.</p>
+<p>La guía se estructura en los siguientes apartados:</p>
+
+<ul>
+<li><a href="#1.2">Contenido (punto 1.2)</a></li>
+<li><a href="#1.3">Estructura del documento (punto 1.3)</a></li>
+<li><a href="#1.4">Estilos (punto 1.4)</a></li>
+<li><a href="#1.5">Gráficos (punto 1.5)</a></li>
+<li><a href="#1.6">Plantillas (punto 1.6)</a></li>
+<li><a href="#1.7">Validación de la accesibilidad (punto 1.7)</a></li>
+<li><a href="#1.8">Exportación (punto 1.8)</a></li>
+</ul>
+
+<h3>1.1.1 Plataforma</h3>
+
+<p>Para describir los pasos de esta guía se ha utilizado la versión del programa Microsoft Excel 2019 MSO 16.0.10356.20006 para sistemas operativos Windows 11 de 64 bits.</p>
+
+<h3>1.1.2 Convenciones del documento</h3>
+
+<p>Los pasos a seguir que se muestran en esta guía se basan en el uso del ratón por parte de los creadores de contenido. Sin embargo, Microsoft Excel también permite el uso exclusivo del teclado. En este sentido, cuando en la guía se hace referencia a "hacer clic derecho" o "pulsar la opción ...", puedes utilizar las siguientes alternativas:</p>
+
+<p><em>Clic derecho</em>: para hacer clic derecho con el teclado, deben pulsarse conjuntamente las teclas <em>Mayúsculas y F10</em>.</p>
+
+<p>Para acceder a las <em>opciones del menú del programa</em> o a las de la cinta de atajos, deben pulsarse la tecla <em>Alt o F10 y, a continuación, la tecla de atajo que se corresponda con la opción que quieras seleccionar</em>. Por ejemplo, para insertar un gráfico, debes pulsar la siguiente combinación de teclas: Alt &gt;B2.</p>
+
+<p>Estos atajos podrían canviar según el idioma o la versión de tu programa.</p>
+
+<h2 id="1.2">1.2 Contenido</h2>
+
+<h3>1.2.1 Incorporación de metadatos</h3>
+
+<p>Los <em>metadatos</em> de un fichero <em>permiten identificarlo y facilitar su posterior recuperación</em> dentro del equipo informático o en entornos automatizados, a partir de una serie de propiedades con las que lo podemos describir. Además de los metadatos básicos que Excel añade por defecto a los nuevos ficheroes en el momento de creación (fecha de creación, o nombre del usuario, entre otros), se recomienda añadir información sobre el título, la autoría o las palabras clave.</p>
+
+<h4>Pasos a seguir</h4>
+
+<h5>Paso 1. Definir los metadatos</h5>
+
+<p><img src="imatges/image002.png" alt="Caja de diálogo de los metadatos"></p>
+
+<p class="caption">Imagen 1. Menú de información del documento y formulario para añadir metadatos.</p>
+
+<p class="comando">Menú: Archivo – Información - Propiedades - Propiedades avanzadas</p>
+
+<p>Permite definir metadatos adicionales (título, asunto, autor, categoría, palabras clave, comentarios, etc.) y modificarlos. Para ver todas las propiedades disponibles hay que pulsar sobre la opción "Personalizar".</p>
+
+<h3>1.2.2 Idioma del documento</h3>
+
+<p>Indicar el idioma de los documentos es importante para que las ayudas técnicas (por ejemplo, los lectores de pantalla) sean capaces de representar con mayor fidelidad el contenido. Desgraciadamente y, a diferencia de otros productos como  Microsoft Word, Excel no permite indicar el idioma de cada una de las celdas de una hoja de cálculo. Sin embargo, sí podemos indicar el idioma general del documento.</p>
+
+<h4>1.2.2.1 Pasos a seguir</h4>
+
+<h5>Paso 1. Acceder a las opciones de idioma de Excel</h5>
+
+<p>En Archivo - Opciones - Idiomas, bajo la opción "Corrección e idiomas de creación de Office" elige el idioma del documento y activa el botón "Establecer como preferido". Si el idioma no esta disponible, puedes añadirlo mediante el botón "Agregar un idioma...".</p>
+
+<p><img src="imatges/image003.png"
+alt="Menú - Opciones - Idioma"></p>
+
+<p class="caption">Imagen 2. Cuadro de diálogo para establecer el idioma de creación y corrección del Office.</p>
+
+<p>Además del idioma, la configuración regional de la aplicación también puede implicar importantes diferencias en cuanto a la sintaxis de las fórmulas y en la forma de expresar decimales o fechas. La configuración regional no se puede modificar desde Excel, sino que debe hacerse desde las opciones de configuración del sistema operativo.</p>
+
+<p>Si importamos datos de otras fuentes es importante prestar atención a este detalle para su correcta interpretación.</p>
+
+<h4>1.2.2.2 Pasos a seguir</h4>
+
+<h5>Paso 1. Acceder a las opciones de región del Windows</h5>
+
+<p>Configuración - Hora e idioma - Idioma y región</p>
+
+<h5>Paso 2. Modificar la configuración</h5>
+
+<p>Por defecto, la configuración utilizada es la propia del idioma del sistema operativo. Si modificamos el idioma, la configuración (fechas, números...) variará en consonancia. Sin embargo, también podemos modificar el formato de cada uno de estos aspectos individualmente. El menú &quot;Región&quot; dentro de &quot;Formato regional&quot;, permite elegir un idioma y seleccionar &quot;Formato de número&quot;, &quot;Formato de moneda&quot;, y &quot;Formato de fecha y hora&quot;.</p>
+
+<p><img src="imatges/image004.png" alt="Formato regional configurado como español."></p>
+
+<p class="caption">Imagen 3. Elección de idioma y botón de opciones de formato.</p>
+
+<p>Windows permite configurar opciones más avanzadas de numeración, pero no es recomendable cambiarlas.</p>
+
+<h2 id="1.3">1.3 Estructura del documento</h2>
+
+<p>Cuando trabajamos con una hoja de cálculo la estructura del documento es igual de importante que la de un documento Word o PowerPoint. En este sentido, en la medida de lo posible, debemos:</p>
+
+<ul>
+<li><em>Evitar combinar o dividir celdas para generar la maquetación del documento</em>, dado que esta funcionalidad altera la estructura general y lógica de las tablas.</li>
+
+<li><em>No emplear columnas, filas o celdas en blanco para dar formato al documento</em> (por ejemplo, dejar márgenes o espacios entre elementos o simular bordes). Los lectores de pantalla leen todas las celdas, incluidas las que no tienen contenido.</li>
+
+<li>Organizar la información <em>de manera lógica</em> en las diversas hojas de libro.</li>
+
+<li><em>Eliminar todas las hojas en blanco</em> del libro para evitar confundir a los usuarios.</li>
+</ul>
+<p>Ejemplos</p>
+
+<div class="ejemploincorrecto">
+
+<p>Ejemplo incorrecto</p>
+
+<p><img src="imatges/image005.png" alt="Se muestra una tabla con bordes muy gordos en otro color."></p>
+
+<p>Imagen 4. Ejemplo de mala práctica: En este ejemplo se han usado celdas en blanco para dar formato a la tabla. Por otro lado, el contenido debería comenzar en la primera celda de la hoja (A1) y no en la cuarta fila de la segunda columna (B4).</p>
+
+</div>
+
+<div class="ejemplocorrecto">
+
+<p>Ejemplo correcto</p>
+
+<p><img src="imatges/image006.png" alt="Se muestra una tabla regular."></p>
+
+<p class="caption">Imagen 5. Ejemplo de buena práctica: En este ejemplo no hay ninguna celda en blanco y el contenido empieza en la primera celda de la hoja.</p>
+</div>
+
+<h3>1.3.1 Título de la hoja</h3>
+
+<p>Cada hoja de cálculo del libro debe titularse con un nombre único suficientemente descriptivo para entender cuál es su contenido.</p>
+
+<h4>1.3.1.1 Pasos a seguir</h4>
+
+<h5>Paso 1. Cambiar el título de la hoja</h5>
+
+<p>Sitúa el cursor del ratón encima del título de la hoja y haz doble clic. A continuación, escribe el título de la hoja.</p>
+
+<p><img src="imatges/image007.png" alt="Pestañas con los títulos de las diferentes hojas"></p>
+
+<p class="caption">Imagen  6. Al hacer doble clic encima de la pestaña de cada hoja, se activará la opción de edición del título.</p>
+
+<h3>1.3.2 Asignar nombres a grupos de celdas</h3>
+
+<p>Asignar un nombre a un grupo de celdas facilita la navegación y la recuperación de la información dentro del documento.</p>
+
+<h4>1.3.2.1 Pasos a seguir</h4>
+
+<h5>Paso 1. Seleccionar el grupo de celdas</h5>
+
+<p>Selecciona con el ratón o con la tecla &quot;Mayúsculas&quot; y el cursor de dirección el grupo de celdas al que quieras asignar un nombre. A continuación, selecciona:</p>
+
+<p class="comando">Menú: Fórmulas – Asignar nombre.</p>
+
+<h5>Paso 2. Definir el nombre</h5>
+
+<p>En el cuadro de diálogo que se abre, indica el nombre del grupo de celdas y su ámbito (todo el libro o sólo la hoja de cálculo activa). Finalmente, pulsa el botón &quot;De acuerdo&quot;.</p>
+
+<p><img src="imatges/image008.png" alt="Fórmula - Definir nombre"></p>
+
+<p class="caption">Imagen  7. Cuadro de diálogo para asignar un nombre a un grupo de celdas.</p>
+
+<p>Con la combinación de teclas Ctrl + F3 puedes abrir el "Administrador de nombres" para consultar y navegar por los grupos de celdas creados.</p>
+
+<p><img src="imatges/image009.png" alt="Administrador de nombres"></p>
+
+<p class="caption">Imagen 8. Cuadro de diálogo del administrador de nombres y lista de grupos de celdas disponibles.</p>
+
+<h3>1.3.3 Definir los encabezados de las tablas </h3>
+
+<p>Definir los encabezamientos de las columnas de las tablas es importante para facilitar la comprensión y la navegación por el contenido de la tabla, especialmente para usuarios de
+lectores de pantalla.</p>
+
+<h4>1.3.3.1 Pasos a seguir</h4>
+
+<h5>Paso 1. Insertar una tabla</h5>
+
+<p class="comando">Menú: Insertar - Tabla</p>
+
+<p>Esto abrirá un cuadro de diálogo en el que tendrás que indicar qué celdas forman la tabla. Esta ventana también incluye una casilla de verificación que se debe marcar para indicar que la tabla tiene encabezamientos.</p>
+
+<p><img src="imatges/image010.png" alt="Menú - Insertar - Tabla"></p>
+
+<p class="caption">Imagen  9. Pasos para insertar una tabla.</p>
+
+<h5>Paso 2. Modificar el valor de las celdas de encabezamientos.</h5>
+
+<p class="comando">Menú: Insertar – Tabla</p>
+
+<p>Una vez creada la nueva tabla, puedes modificar el título de las columnas.</p>
+
+<p>Si ya tienes los datos introducidos en la hoja de cálculo, pero no has creado aún una tabla siguiendo los pasos anteriores, puedes hacerlo ahora. Excel generará la tabla y marcará su primera fila como encabezado.</p>
+
+<h3>1.3.4 Proporcionar información sobre la estructura del documento</h3>
+
+<p>Los usuarios ciegos o con baja visión severa pueden experimentar dificultades para moverse por las hojas de cálculo, sobre todo, si contienen muchas tablas, datos y gráficos diferentes. En este sentido, es conveniente proporcionar un resumen del contenido y unas directrices de navegación básicas para que el usuario pueda comprender cuál es el contenido, cómo se organiza dentro del libro y en qué orden se recomienda la consulta.</p>
+
+<p>La manera más efectiva de proporcionar esta información es ubicar este resumen al principio de la primera hoja de cálculo (por ejemplo, en la celda A1), dado que esta parte del documento será la primera que leerán los lectores de pantalla al acceder a la hoja.</p>
+
+<p>Un ejemplo de texto resumen podría ser el siguiente:</p>
+
+<div class="ejemplocorrecto">
+<p><em>Ejemplo correcto</em></p>
+
+<p>&quot;Este archivo contiene los resultados del ejercicio económico del año 2020. Contiene dos hojas de cálculo con sendas tablas. La primera  hoja, &lsquo;ingresos&rsquo;, corresponde a los ingresos. La segunda hoja, &lsquo;gastos&rsquo;, corresponde a los gastos. Finalmente una tercera hoja, &lsquo;grafico&rsquo;, contiene un gráfico de líneas que muestra la evolución de los resultados económicos en los últimos cinco años.&quot;</p>
+
+</div>
+
+<h3>1.3.5 El formato de las celdas</h3>
+
+<p>Por defecto, el contenido de las celdas de una hoja de cálculo por defecto se identifica como número genérico (General). Si queremos trabajar con otros tipos de valores como decimales, moneda..., texto, porcentajes o fechas, deberemos indicarlo. El formato es muy importante no sólo para garantizar el buen funcionamiento de las fórmulas aplicadas y la compatibilidad del documento, sino también para que las ayudas técnicas puedan interpretar correctamente el contenido.</p>
+
+<h4>1.3.5.1 Pasos a seguir</h4>
+
+<h5>Paso 1. Seleccionar una celda (o una columna de datos)</h5>
+
+<p>Una vez seleccionada, haz clic derecho o Mayúsculas + F10.</p>
+
+<h5>Paso 2. Seleccionar la opción &quot;Formato de celdas&quot;</h5>
+
+<h5>Paso 3. Escoger el tipo de dato</h5>
+
+<p>Selecciona el tipo de datos dentro de las opciones disponibles.</p>
+
+<p><img src="imatges/image011.png" alt="Formato de las celdas"></p>
+
+<p class="caption">Imagen 10. Tipos de datos disponibles. Algunos tipos de datos como los números permiten seleccionar configuraciones más avanzadas. En el ejemplo, se ve la configuración por defecto con dos decimales</p>
+
+<h2 id="1.4">1.4 Estilos</h2>
+
+<p>Excel cuenta con un conjunto de estilos predefinidos que puedes aplicar a tus documentos o plantillas. Sin embargo, las combinaciones de fuentes tipográficas y colores por defecto no siempre son del todo accesibles. En este sentido, aunque también podemos asignar diferentes estilos a cada una de las celdas de nuestros documentos a medida que vamos creando nuestro documento, lo más eficiente es generar los estilos personalizados accesibles para reutilizarlos en diferentes documentos. El uso de estilos aporta consistencia al documento y facilita su comprensión y lectura <a href="#bib2">[2]</a>.</p>
+
+<h3>1.4.1 Pasos a seguir</h3>
+
+<h4>1.4.1.1 Paso 1. Acceder a las opciones de estilo</h4>
+
+<p class="comando">Menú: Inicio – Estilos de Celda.</p> 
+<p>Despliega los estilos disponibles para las tablas o celdas, y selecciona la opción &quot;Nuevo estilo de celda&quot;.</p>
+
+<p><img src="imatges/image012.png" alt="Menú: Inicio - Estilos - Estilos de celda - Nuevo estilo de celda."></p>
+
+<p>Imagen 1. Estilos disponibles y opción para crear un nuevo estilo de celda.</i></p>
+
+<h4>1.4.1.2 Paso 2. Determinar el estilo</h4>
+
+<p>Activa el botón &quot;Formato...&quot; y, a continuación, configura el estilo a partir de las opciones disponibles en cada pestaña.</p>
+
+<p><img src="imatges/image013.png"
+alt="Estilo - Nuevo estilo de celda -Formato - Tipo de letra"></p>
+
+<p>Imagen 11. Opciones para la configuración del formato de las celdas.</p>
+
+<p>La primera pestaña (Número) y la última (Proteger) no están relacionadas con el estilo de la celda, sino con su contenido. En cuanto a las opciones relacionadas con los estilos (Alineación, Fuente, Borde y Relleno), evitaremos:</p>
+
+<ul>
+<li><em>Alineación</em>: orientar el texto en vertical o diagonal y combinar celdas. La primera opción dificulta la legibilidad del documento, y la segunda el acceso a través de lectores de
+pantalla.</li>
+
+<li><em>Fuente</em>: Se recomienda el uso de fuentes sans serif (sin remates) como Verdana o Arial, en lugar de fuentes serif como Times New Roman o Garamond. De entre las diferentes opciones disponibles opta por aquellas fuentes en las que es más fácil diferenciar caracteres como el 1, la I o la l minúscula, que presentan suficiente diferencia entre las minúsculas y mayúsculas y que cuentan con un espacio entre letras que favorece la legibilidad.
+
+<ul>
+<li style='font-size:18.0pt;line-height:107%;
+font-family:"Verdana"'>1 I l Verdana (bien)</li>
+
+<li style='font-size:18.0pt;line-height:107%;
+font-family:"Comic Sans MS"'>1 I l Comic Sans (bien)</li>
+
+<li style='font-size:18.0pt;
+line-height:107%;font-family:"Times New Roman",serif'>1 I l Times New Roman (regular)</li>
+</ul> 
+
+<p>La fuentes Verdana y Comic Sans son dos fuentes sans serif que presentan una mayor diferencia entre el número uno, la letra i mayúscula y la letra l minúscula, que la Times New Roman.</p>
+</li>
+
+<li>El <em>cuerpo de la fuente</em> (Tamaño) no debería bajar de los <em>12 puntos</em>. Idealmente, trabajaremos con un intervalo de <em>entre 12 y 18 puntos</em>. Recuerda que, aunque los usuarios pueden hacer zoom con las opciones de Excel o de su magnificador de pantalla (lupa), muchos prefieren imprimir los documentos y leer en papel.</li>
+
+<li>Aunque podemos emplear <em>mayúsculas, negritas y cursivas</em> para los títulos o para destacar ciertos elementos, debemos procurar <em>no abusar de estos estilos</em>.</li>
+
+<li>El <em>color de la fuente</em> debe presentar una <em>relación de contraste mínima de 4.5:1</em> respecto del color de fondo de la celda.</li>
+
+<li><em>Borde</em>: nunca se deben simular los bordes de las tablas con columnas y filas vacías pintadas de color.</li>
+
+<li><em>Relleno</em>: como en el caso del texto, el color del fondo  debe presentar una <em>relación de contraste mínima de 4.5:1</em> respecto del color de la letra. Procura evitar el uso de patrones como fondo de las celdas que contienen datos.</li>
+</ul>
+
+<h2 id="1.5">1.5 Gráficos</h2>
+
+<p>A continuación, se incluye una breve caracterización de los gráficos de uso más común, un conjunto de consideraciones generales sobre la accesibilidad de los gráficos y una explicación sobre cómo crear un gráfico a partir de un conjunto de datos.</p>
+
+<h3>1.5.1 Gráficos de barras</h3>
+
+<p>Los gráficos de barras permiten <em>comparar un conjunto de valores y establecer un ranking entre ellos</em>, si los ordenamos. En este tipo de visualización el lector compara longitudes entre los elementos situados sobre un mismo eje y puede identificar los valores más altos, los más bajos, así como disponer de una aproximación visual de la diferencia entre valores. El gráfico consta de dos ejes: a) uno que muestra la escala de valores representados (cuantitativo); y b) uno que codifica el valor de cada categoría o el tiempo (categórico o temporal), y en el que se sitúan las diferentes barras. El gráfico se puede trasponer, dando lugar a un gráfico de barras vertical u horizontal.</p>
+
+<h4>1.5.1.1 Buenas prácticas</h4>
+<ul>
+<li>Si se representan datos temporales, se debe <em>ordenar el eje cronológicamente</em>.</li>
+
+<li>El eje cuantitativo debe <em>iniciarse en cero</em> para evitar una mala interpretación de los valores relativos.</li>
+
+<li>Utilizar la variante de <em>barras horizontales cuando el nombre de las categorías representadas supera los doce caracteres</em>. Si usáramos barras verticles deberíamos mostrar el nombre en diagonal o en vertical, dificultando su lectura.</li>
+
+<li>La variante con <em>barras horizontales</em> también permite al lector <em>medir las longitudes con más precisión</em>.</li>
+
+<li>Dejar un <em>espacio suficiente entre barras</em> para diferenciarlas.</li>
+
+<li>En el caso de que optemos por un gráfico de barras apiladas, garantizar una <em>relación de contraste mínima de 3:1</em> entre los colores de cada barra o de los bordes. Esta variante presenta algunos problemas en la comparación de valores.</li>
+
+<li>Según el tipo de datos, también puede ser conveniente:</p>
+<ul>
+<li><em>Ordenar las categorías</em> de mayor a menor.</li>
+<li><em>Añadir una línea de referencia</em> (la media aritmética, el objetivo que se persigue, etc.) para dar contexto a la información que se quiere transmitir.</li>
+</li>
+</ul>
+</li>
+</ul>
+<p>Ejemplos de las buenas prácticas</p>
+<p><img src="imatges/image014.png" alt="Gráfico de barras vertical"></p>
+
+<p class="caption">Imagen 13. Gráfico de barras con eje vertical en cero. Fuente: elaboración propia.</p>
+
+<p><img src="imatges/image015.png" alt="Gráfico de barras apiladas vertical"></p>
+
+<p class="caption">Imagen 14. Gráfico de barras apiladas con suficiente contraste entre las diferentes categorías. Fuente: elaboración propia.</p>
+
+<p><img src="imatges/image016.png" alt="Gráfico de barras horizontal."></p>
+
+<p class="caption">Imagen 15. Gráfico de barras horizontal ordenado y con una línea de referencia para el valor de la media. Fuente: elaboración propia.</p>
+
+
+<h3>1.5.2 Gráfico de líneas</h3>
+
+<p>Los gráficos de líneas permiten <em>mostrar la evolución temporal de una o más variables  cuantitativas</em>. La variable temporal se sitúa en el eje de categorías. El valor en el eje de datos determina la altura de cada categoría. En este caso, no es necesario empezar por cero.</p>
+
+<h4>1.5.2.1 Buenas prácticas</h4>
+<ul>
+<li><em>Evitar</em> incluir una <em>cantidad excesiva de líneas</em> que dificulten la legibilidad del gráfico.</li>
+<li>Si las líneas se superponen, garantizar una <em>relación de contraste mínima de 3:1 entre los colores</em> de cada línea, o crear un gráfico independiente por cada una. Si se crean múltiples gráficos los rangos de los ejes deben ser equivalentes en todos ellos.</li>
+</ul>
+<p><img src="imatges/image017.png" alt="Ver pie"></p>
+<p>Imagen 16. Gráfico de líneas sin las líneas de cuadrícula. Fuente: elaboración propia</p>
+
+<h3>1.5.3 Gráfico de sectores</h3>
+
+<p>Conocido coloquialmente como gráfico circular, es el gráfico estadístico más controvertido pues el ángulo de  los sectores no se percibe con precisión, lo que dificulta su interpretación, especialmente cuando hay muchos sectores o son de tamaño similar <a href="#bib1">[1]</a>. Se utiliza para representar el valor de las partes respecto al total.</p>
+
+<h4>1.5.3.1 Buenas prácticas</h4>
+
+<ul>
+<li>No usar más de 5 categorías.</li>
+<li>Garantizar un contraste suficiente entre colores adyacentes.</li>
+<li>Comenzar situando el sector de mayor tamaño a las 12h (posición del reloj) en punto y continuar en sentido horario de mayor a menor.</li>
+</ul>
+<p><img src="imatges/image018.png" alt="Gráfico de sectores."></p>
+
+<p class="caption">Imagen 17. Gráfico de sectores que representa cuatro partes del total. Fuente: elaboración propia.</p>
+
+<h3>1.5.4 Histograma</h3>
+
+<p>Los histogramas son gráficos de barras que muestran la distribución de una variable en los que la longitud de cada barra representa la frecuencia de un valor determinado. Los histogramas permiten obtener una visión general de un conjunto de datos e identificar el patrón de los valores (normal, asimétrico, …).</p>
+
+<h4>1.5.4.1 Buenas prácticas</h4>
+
+<p>Aunque, por convención, no se acostumbra a dejar espacio entre las barras del gráfico, para garantizar un buen contraste en accesibilidad se recomienda incluir un borde en cada barra. </p>
+
+<p><img src="imatges/image019.png" alt="Histograma"></p>
+
+<p class="caption">Imagen 18. Histograma en el que las barras tienen un borde. Fuente: elaboración propia.</p>
+
+<h3>1.5.5 Diagrama de cajas y bigotes </h3>
+
+<p>Los diagramas de cajas y bigotes (en inglés, <i lang="en">boxplot</i>) ofrecen de forma compacta los descriptivos estadísticos de un conjunto de datos. El centro de la caja representa la mediana, los extremos el primer y el tercer cuartil. De cada extremo de la caja emergen las líneas llamadas bigotes que representan los valores mínimo y máximo del intervalo de observaciones típicas. Finalmente, fuera de la caja se encuentran los llamados valores atípicos  representados por pequeños círculos o asteriscos.</p>
+
+<h4>1.5.5.1 Buenas prácticas</h4>
+<ul>
+<li>Este tipo de gráfico no es muy conocido y debemos asegurarnos de que nuestra audiencia lo entiende.</li>
+
+<li>Debemos incluir de forma explícita los criterios usados para declarar los valores como atípicos, pues no hay reglas establecidas.</li>
+
+<li>El color de la mediana debe ofrecer contraste suficiente con el resto de la caja.</li>
+</ul>
+<p><img src="imatges/image020.png" alt="Diagrama de cajas y bigotes."></p>
+
+<p class="caption">Imagen19. Diagrama de cajas y bigotes. Fuente: elaboración propia.</p>
+
+<h3>1.5.6 Gráfico de dispersión</h3>
+
+<p>Los gráficos de dispersión (en inglés <i lang="en">scatterplot</i>) permiten representar el valor de dos variables y ver su relación. También permiten identificar valores atípicos, es decir, que no siguen la misma correlación que el resto.</p>
+
+<h4>1.5.6.1 Buenas prácticas</h4>
+
+<p>A menudo varios puntos se superponen parcialmente. Para que ello no impida la interpretación de los datos será necesario usar un color diferenciado para el borde de cada punto, y además añadir un efecto de transparencia en el relleno.</p>
+
+<p>En algunos casos puede ser útil añadir una etiqueta textual para el valor de cada punto, pero a menudo provocará mucho ruido.</p>
+
+<p><img src="imatges/image021.png" alt="Gráfico de dispersión."></p>
+
+<p class="caption">Imagen 20. Gráfico de dispersión que muestra una correlación positiva entre variables. Fuente: elaboración propia.</p>
+
+<h3>1.5.7 Crear un gráfico</h3>
+
+<h4>1.5.7.1 Pasos a seguir</h4>
+
+<h5>Paso 1. Seleccionar la fuente de datos</h5>
+
+<p>Selecciona la tabla de datos a partir de la cual quieres generar el gráfico.</p>
+
+<h5>Paso 2. Insertar el gráfico</h5>
+
+<p class="comando">Menú: Insertar – Seleccionar el tipo de gráfico.</p>
+
+<p>También puedes seleccionar la opción &quot;Gráficos recomendados&quot; y Excel te ofrecerá los gráficos que teóricamente mejor se adapten para representar visualmente el
+conjunto de datos seleccionado.</p>
+
+<h5>Paso 3. Activar la opción gráficos recomendados</h5>
+
+<p class="comando">Menú: Insertar – Gráficos recomendados.</p>
+
+<h5>Paso 4. Seleccionar el gráfico</h5>
+
+<p>Selecciona el gráfico que mejor se adapta a las características del conjunto de datos que quieres representar
+gráficamente. La pestaña &quot;Todos los gráficos&quot; te permite navegar entre todos los tipos de gráficos disponibles en la biblioteca de Excel.</p>
+
+<p><img src="imatges/image022.png" alt="Menú: Inserción - Gráficos recomendados - Todos los gráficos."></p>
+
+<p class="caption">Imagen 21. Pasos para añadir un gráfico estadístico.</p>
+
+<h3>1.5.8 Consideraciones generales sobre la accesibilidad de los gráficos</h3>
+
+<p>Para asegurar la accesibilidad de los gráficos estadísticos generados con Excel tienes que asegurarte que cuentan con:</p>
+
+<ul>
+<li>Un <em>título breve</em> (entre 6 y 12 palabras) y descriptivo que permita al usuario diferenciarlo del resto de gráficos de la hoja de cálculo o libro.</li>
+
+<li>Un texto alternativo breve.</li>
+
+<li>Una <em>descripción larga</em> en el caso de que el texto alternativo breve no sea suficiente como alternativa a
+su contenido.</li>
+
+<li>Ejes con etiquetas breves y descriptivas.</li>
+
+<li><em>Leyendas</em> que expliquen la codificación (esquemas de colores, patrones...) utilizada en el gráfico.</li>
+
+<li><em>Abreviaturas desarrolladas</em>. Reduce el uso de abreviaturas a las estrictamente necesarias y desarrolla en algún lugar del documento (por ejemplo, una hoja exclusivamente dedicada a ello) todas las que no sean suficientemente conocidas o estandarizadas.</li>
+</ul>
+<p>Las opciones para añadir o editar todos estos elementos a un gráfico se activan en el momento de crear uno, y las podemos encontrar bajo las pestañas &quot;Diseño&quot; y &quot;Formato&quot; de la cinta de atajos. A continuación, se explica, paso a paso, cómo añadir estas características a un gráfico, así como otros aspectos necesarios para garantizar su accesibilidad.</p>
+
+<h3>1.5.9 Título</h3>
+
+<p>Al añadir un nuevo gráfico a la hoja de cálculo, Excel
+añadirá automáticamente un título de ejemplo que podemos editar. El <em>título del gráfico debe ser breve</em> (entre
+6 y 12 palabras), <em>pero suficientemente descriptivo</em>. En cuanto a su estilo, teniendo presente que la recomendación general es no bajar de los 12 puntos en todo el gráfico, podemos establecer tamaños a partir de esta cifra para los títulos. También podemos utilizar la negrita o un color diferente (siempre con suficiente contraste) si queremos destacarlo por encima del resto de elementos del gráfico.</p>
+
+<p><img src="imatges/image023.png" alt="Cuadro de edición del título del gráfico."></p>
+
+<p class="caption">Imagen 22. Título automático que podéis editar y formatar con las opciones de texto de la cinta de opciones.</p>
+
+<p>Para modificar el estilo del gráfico sigue los pasos que se explican a continuación.</p>
+
+<h4>1.5.9.1 Pasos a seguir</h4>
+
+<h5>Paso 1. Seleccionar el título</h5>
+
+<h5>Paso 2. Menú: Inicio – Fuente.</h5>
+
+<p>Desde este menú podemos modificar el
+tipo de fuente, tamaño, peso (normal o negrita), estilo (cursiva o subrayado) y
+color.</p>
+
+<p>Para acceder a las opciones adicionales
+de formato, haz doble clic sobre el título o selecciónalo y ve a <em>Formato – Opciones de título</em>.</p>
+
+<p><img src="imatges/image024.png" alt="Formato del título del gráfico."></p>
+
+<p class="caption">Imagen 23. Opciones de formato para el texto aplicadas al título</p>
+
+<p>Las opciones de formato del título de gráfico permiten modificar el color de relleno (fondo), añadir un borde, sombras, efectos 3D o cambiar la orientación o dirección del texto. Sin embargo y, en pro de la claridad, procura evitar al máximo este tipo de estilos.</p>
+
+<h3>Texto alternativo</h3>
+
+<p>El texto alternativo es una explicación breve en palabras del contenido gráfico. El objetivo de un texto alternativo es garantizar que las personas ciegas o con baja visión severa puedan acceder al contenido gráfico mediante un texto que aporte la misma información que el gráfico. Puesto que este texto debe ser breve (no se recomienda más de 125 caracteres), si el gráfico es muy complejo habrá que complementarlo con una descripción larga (véase el punto 1.5.11. Descripción larga).</p>
+
+<h4>1.5.10.1 Pasos a seguir</h4>
+
+<h5>Paso 1. Abrir el menú contextual</h5>
+
+<h5>Paso 2. Abrir el editor de textos alternativos</h5>
+
+<p>Seleccionar la opción &quot;Edita el texto alternativo&quot;. Una vez activada la ventana para añadir el texto alternativo, escribe el texto en el campo correspondiente. No usaremos nunca la opción &quot;Marcar como decorativo&quot; ya que esta opción está pensada para gráficos que no aportan información y no es apropiada para los gráficos estadísticos.</p>
+
+<p><img src="imatges/image025.png" alt="Texto alternativo."></p>
+
+<p class="caption">Imagen 24. Cuadro de diálogo para añadir un texto alternativo.</p>
+
+<p>Consejos para redactar un texto alternativo breve:</p>
+
+<ul>
+<li>Ser lo más <em>sintético</em> posible. Si es posible resume el mensaje en una o dos frases.</li>
+
+<li>Intenta responder a la pregunta, ¿qué información o mensaje quiere transmitir el gráfico?</li>
+
+<li><em>Identifica el tipo de gráfico</em> (barras, de sectores, de dispersión...).</li>
+
+<li>Informa sobre el <em>tipo de tendencia</em> u otras informaciones de interés para el lector/a.</li>
+
+<li>Desarrolla todos los <em>acrónimos y abreviaturas</em> que no sean de uso común.</li>
+
+<li>En la mayoría de los casos, será necesario <em>complementar el texto alternativo con una descripción larga</em>. Procura <em>no repetir el mismo mensaje</em> en ambas alternativas e informa de la existencia y localización de la descripción larga dentro del texto alternativo breve. En estos casos, el texto alternativo debe servir también para que el lector pueda decidir si le interesa o no acceder a la descripción larga.</li>
+</ul>
+
+<p>A continuación, se muestran dos ejemplos de textos alternativos breves para los siguientes gráficos:</p>
+
+<p><img src="imatges/image026.png" alt="Gráfico de líneas."></p>
+
+<p class="caption">Imagen 25. Segundo gráfico de ejemplo para la demostración del texto alternativo. Fuente: elaboración propia.</p>
+
+<p><em>Ejemplo correcto</em></p>
+
+<p>&quot;Gráfico de líneas que muestra la evolución negativa
+del número de nacimientos en Catalúña en el período 2015-2019&quot;</p>
+
+<p><img src="imatges/image027.png" alt="Gráfico de sectores."></p>
+
+<p class="caption">Imagen 26. Segundo gráfico de ejemplo para la demostración del texto alternativo. Fuente: elaboración propia.</p>
+
+<p><em>Ejemplo correcto</em></p>
+
+<p>&quot;Gráfico de sectores que muestra el porcentaje de uso de las diferentes fuentes de información disponibles para encontrar literatura científica.&quot;</p>
+
+<h3>1.5.11 Descripción larga</h3>
+
+<p>A diferencia de las versiones anteriores, Excel 365 no incorpora ninguna opción nativa para añadir descripciones largas a los gráficos o imágenes. En el caso de que necesitemos complementar el texto alternativo breve con una descripción larga podemos seguir alguna de las técnicas siguientes:</p>
+
+<ul>
+<li>Incluir una descripción larga en algún punto de la hoja de cálculo (preferiblemente a continuación del gráfico), haciendo referencia al gráfico mediante su título o algún identificador (por ejemplo, &quot;Figura 1&quot;).</li>
+
+<li>Enlazar el gráfico con la descripción larga mediante un enlace. La descripción textual puede ubicarse a continuación del gráfico o en una hoja específica con el resto de las descripciones largas. Si optamos por esta segunda opción, es necesario permitir al usuario volver al gráfico desde la hoja donde se encuentran las descripciones largas mediante otro enlace.</li>
+</ul>
+
+<h4>1.5.11.1 Pasos a seguir para enlazar la descripción larga con el gráfico</h4>
+
+<h5>Paso 1. Seleccionar el gráfico.</h5>
+
+<p>Selecciona el gráfico en el que quieres añadir el enlace.</p>
+
+<h5>Paso 2. Insertar el enlace.</h5>
+
+<p class="comando">Menú: Inserción – Enlace.</p>
+
+<h5>Paso 3. Seleccionar el destino del enlace.</h5>
+
+<p>Selecciona la hoja en la que se encuentran las  descripciones largas (lugar en el documento) y la celda exacta con la descripción larga (referencia de la celda).<a
+name="Pas_4_(opcional)._Descriure_breument_l’e"></a></p>
+
+<p class="caption"><img src="imatges/image028.png"
+alt="Cuadro de diálogo de edición del enlace.">Imagen 27. Excel permite crear enlaces que llevan a lugares concretos del libro de trabajo (celdas concretas dentro de una hoja).</p>
+
+<h5>Paso 4 (opcional). Describir brevemente el enlace.</h5>
+
+<p>Activa el botón &quot;Información de pantalla...&quot; y escribe un texto informativo que aparecerá sobre el gráfico
+cuando el usuario sitúe el cursor sobre él. Una vez escrito, activa el botón &quot;De acuerdo&quot;. Debes tener presente, sin embargo, que este texto no se puede visualizar de forma ampliada y, por lo tanto, a menudo no será legible para personas con baja visión. Finalmente, activa el botón &quot;De acuerdo&quot;.</p>
+
+<p><img src="imatges/image029.png" alt="Definición de la información de pantalla para el enlace."></p>
+
+<p class="caption">Imagen 28. Puedes añadir información adicional sobre el destino o propósito de los enlaces.</p>
+
+<p>Consejos para redactar una descripción larga:</p>
+<ul>
+<li><em>Evita utilizar características sensoriales</em>(forma, color, tamaño, orden, orientación...) para referirte a las marcas o elementos del gráfico.</li>
+
+<li>Desarrolla todos los acrónimos y abreviaturas que no sean de uso común.</li>
+
+<li>No repitas la misma información que contiene el texto alternativo corto.</li>
+
+<li>Apuesta por la <em>objetividad</em> y piensa en lo que es realmente <em>importante</em> del gráfico.</li>
+
+<li>Procura <em>transcribir todo el contenido textual</em> que forma parte del gráfico.</li>
+</ul>
+
+<p>A continuación, se muestran dos ejemplos de descripciones largas para los siguientes gráficos:</p>
+
+<p><img src="imatges/image030.png" alt="Gráfico de líneas."></p>
+
+<p class="caption">Imagen 29. Primer gráfico para demostrar el uso de la descripción larga.</p>
+
+<p><em>Ejemplo correcto</em></p>
+
+<p>&quot;Gráfico de líneas que muestra la evolución negativa del número de nacimientos en Cataluña en el periodo  2015-2019. En el año 2015, nacieron 70.450 personas; en el año 2016, 68974 personas; en el año 2017, 66.803; en el año 2018, 63.566 personas; y en el año 2019, 63.566 personas.&quot;</p>
+
+<p><img src="imatges/image031b.png" alt="Gráfico de sectores"></p>
+
+<p class="caption">Imagen 30. Segundo gráfico de ejemplo para la demostración del texto alternativo. Fuente: elaboración propia.</p>
+
+<p><em>Ejemplo correcto</em></p>
+
+<p>&quot;Gráfico de sectores que muestra el porcentaje de uso de las diferentes fuentes de información disponibles para encontrar literatura científica. La fuente de información más utilizada es Google (55%), seguida del Google Scholar (20%), los repositorios (15%) y Scopus (10%).&quot;</p>
+
+<h3>1.5.12 Ejes</h3>
+
+<p>Los ejes son un elemento fundamental en los gráficos cartesianos que permiten <em>relacionar variables independientes</em>(eje x), con <em>variables dependientes</em>(eje y).</p>
+
+<h4>1.5.12.1 Pasos a seguir</h4>
+
+<h5>Paso 1. Seleccionar el gráfico.</h5>
+
+<p>Selecciona el gráfico en el que quieres mostrar los ejes.</p>
+
+<h5>Paso 2. Añadir los ejes.</h5>
+
+<p class="comando">Menú: Diseño de gráfico – Agregar elemento de gráfico – Ejes.</p>
+
+<p><img src="imatges/image032.png" alt="Menú: Añadir un elemento de gráfico - Ejes."></p>
+
+<p class="caption">Imagen 31. Opciones del menú de atajos para añadir ejes.</p>
+
+<h3>1.5.13 Leyenda</h3>
+
+<p>La leyenda de un gráfico incluye las claves para interpretar cómo se han codificado los
+valores del gráfico. Por ejemplo: hombres = azul; mujeres = blanco.</p>
+
+<h4>1.5.13.1 Pasos a seguir</h4>
+
+<h5>Paso 1. Seleccionar el gráfico.</h5>
+
+<p>Selecciona el gráfico en el que quieres añadir la leyenda.</p>
+
+<h5>Paso 2. Añadir la leyenda.</h5>
+
+<p class="comando">Menú: Diseño de gráfico – Agregar un elemento de gráfico – Leyenda.</p>
+
+<p><img src="imatges/image033.png" alt="Menú: Diseño - Añade un elemento de gráfico - Etiquetas de datos."></p>
+
+<p class="caption">Imagen 36. Acceso a las opciones para añadir etiquetas de valores al gráfico y escoger la posición.</p>
+
+<h5>Paso 3. Seleccionar la posición de la leyenda.</h5>
+
+<p>Puedes ubicar la leyenda a la izquierda, derecha, parte superior o inferior del gráfico leyenda.</p>
+
+<p>Siguiendo las recomendaciones de Evergreen [3] una alternativa al uso de las leyendas es etiquetar los datos directamente lo más cerca posible de las marcas. Por ejemplo, encima o al lado de las barras o líneas del gráfico. Al etiquetar directamente los datos, podemos incluso prescindir de los ejes por no incluir información redundante.</p>
+
+<p>En el apartado siguiente se muestra cómo añadir etiquetas de datos.</p>
+
+<h3>1.5.14 Etiquetas de datos</h3>
+
+<p>Las etiquetas de datos permiten mostrar los valores asociados a cada marca (punto, barra...) a su lado, facilitando la lectura de detalles concretos a la audiencia.</p>
+
+<h4>1.5.14.1 Pasos a seguir</h4>
+
+<h5>Paso 1. Seleccionar el gráfico.</h5>
+
+<p>Selecciona el gráfico en el que quieres añadir las etiquetas de datos.</p>
+
+<h5>Paso 2. Añadir las etiquetas de datos.</h5>
+
+<p class="comando">Menú: Diseño de gráfico – Agregar – Etiquetas de datos.</p>
+
+<p><img src="imatges/image034.png"
+alt="Menú Fichero - Añadir un elemento de gráfico - Leyenda"></p>
+
+<p class="caption">Imagen 32. Acceso a las opciones para añadir una leyenda al gráfico.</p>
+
+<h5>Paso 3. Seleccionar la posición de las etiquetas de datos.</h5>
+
+<p>Puedes optar por cualquiera de las opciones. Sin embargo, en el caso de que las situemos en el interior de las barras, sectores, etc., del gráfico, debemos garantizar un contraste suficiente entre el color de los caracteres numéricos y la cumplimentación de la forma.</p>
+
+<p>Mediante la opción &quot;Más opciones de la etiqueta de datos&quot; podemos personalizar las etiquetas con un color de fondo, cambiando la orientación del texto, etc. Sin embargo, sólo recomendamos garantizar un tamaño mínimo de 12 puntos y no decorarlas con características superfluas.</p>
+
+<p><img src="imatges/image035.png" alt="Formato de las etiquetas de datos."></p>
+
+<p class="caption">Imagen 33. Opciones avanzadas de formato de las etiquetas de datos.</p>
+
+<p>En el siguiente ejemplo, se muestra el uso de las etiquetas de datos para mostrar los valores asociados a cada punto de un gráfico de líneas.</p>
+
+<p><img src="imatges/image036.png" alt="Etiquetas de datos en un gráfico de líneas."></p>
+
+<p class="caption">Imagen 34. Las etiquetas de los datos facilitan a la audiencia conocer los datos exactos que el gráfico representa. Fuente: elaboración propia.</p>
+
+<h3>1.5.15 Tablas de datos</h3>
+
+<p>Más allá de las tablas de datos definidas previamente a la creación del gráfico, Excel también permite insertar una tabla con los datos dentro del espacio destinado a un gráfico. Las <em>tablas de datos son una alternativa textual importante</em> para las personas que no pueden ver o tienen serias dificultades para hacerlo.</p>
+
+<p><img src="imatges/image037.png" alt="Ver pie"></p>
+
+<p class="caption">Imagen 35. Opciones avanzadas para la tabla de datos.</p>
+
+<h4>1.5.15.1 Buenas prácticas</h4>
+
+<p>Si exportas el gráfico a un programa de edición de textos o de presentación de diapositivas, utiliza las opciones específicas de exportación/importación del gráfico para garantizar que el texto de la tabla sigue siendo texto en este otro documento (véase el apartado 1.8 de esta guía). Si haces una captura de pantalla del gráfico y el inserto en otro documento, el texto dejará de ser accesible ya que lo has transformado en una imagen.</p>
+
+<h3>1.5.16 Estilos del gráfico</h3>
+
+<p>Como en el caso de las celdas, Excel permite definir los estilos de nuestro gráfico a partir de diferentes plantillas preestablecidas. Escoger un estilo u otro implicará el uso de patrones o colores sólidos, una cuadrícula u otra, la incorporación de sombras decorativas, color de fondo, entre otros. En general, los estilos disponibles no son muy adecuados para la accesibilidad y es fácil mejorarlos si los
+personalizamos.</p>
+
+<h4>1.5.16.1 Pasos a seguir</h4>
+
+<h5>Paso 1. Seleccionar el gráfico.</h5>
+
+<p class="comando">Menú: Diseño de gráfico – Estilos de diseño.</p>
+
+<h5>Paso 2. Seleccionar el estilo</h5>
+
+<p>Selecciona el estilo que quieres utilizar.</p>
+
+<p><img src="imatges/image038.png" alt="Menú: Diseño - Estilos"></p>
+
+<p class="caption">Imagen 36.Estilos predefinidos disponibles.</p>
+
+<p>El <em>color</em> es un <em>sistema de codificación de la información muy eficiente</em>. Sin embargo, no todas las personas presentan la misma capacidad para diferenciar ciertas combinaciones de colores o apreciar el contraste entre dos colores  adyacentes. Esto implica que el <em>color nunca debe usarse como el único canal para transmitir información</em>. Aunque podemos encontrar ciertas combinaciones de colores perceptibles por una mayoría de usuarios, debemos ser cuidadosos y emplear alternativas adicionales. Una alternativa al uso del color
+es el uso de los <em>patrones o texturas</em> para la cumplimentación de las marcas del gráfico.</p>
+
+<h4>1.5.16.2 Pasos a seguir</h4>
+
+<h5>Paso 1. Seleccionar la marca (barra, línea...).</h5>
+
+<p>Selecciona la marca del gráfico que quieres editar (barra,
+línea...) y haz doble clic.</p>
+
+<h5>Paso 2. Seleccionar el estilo.</h5>
+
+<p>Selecciona la opción &quot;Llenado y línea&quot; del menú
+&quot;Formato de las series de los datos&quot; que aparece en la parte derecha de la interfaz, representada por un cubo de pintura (<img src="imatges/image039.png" style="margin:0;border:0;padding:0" alt="icono del bote de pintura">).</p>
+
+<h5>Paso 3. Seleccionar texturas o patrones como cumplimentación.</h5>
+
+<p>Elija la opción &quot;Llenado de imagen o de textura&quot; o &quot;Llenado de patrón&quot;.</p>
+
+<h5>Paso 4. Seleccionar el tipo de textura o patrón.</h5>
+
+<p>Selecciona el tipo de textura o patrón preferidos y los
+colores de primer plano y de fondo.</p>
+
+<h5>Paso 5. Determinar el color del borde</h5>
+
+<p>En este mismo menú, también puedes seleccionar el estilo y
+color del borde.</p>
+
+<p><img src="imatges/image040.png" alt="Menú contextual: Formato de los puntos de los datos - Relleno de patrón."></p>
+
+<p class="caption">Imagen 37. Opciones de relleno con patrones.</p>
+
+<p>En cuanto al fondo, es un patrón sobre el que se superponen el resto de los componentes presentados, y que no tiene ningún rol esencial en la comunicación de información o datos. En este sentido, procuraremos que el color de fondo elegido mantenga un contraste suficiente con el resto de las marcas (barras, líneas, puntos...). En el siguiente ejemplo, se observa un contraste insuficiente entre el fondo y el color de las barras (1:1 de 3:1), así como respecto del texto (1.5:1 de 4.5:1).</p>
+
+<p>Puedes revisar el contraste mediante herramientas como el <a href="https://github.com/ThePacielloGroup/CCAe">Colour Contrast Analyser:</a>.</p>
+
+<h4>1.5.16.3 Ejemplos</h4>
+
+<div class="ejemploincorrecto">
+<p>Ejemplo incorrecto.</p>
+
+<p><img src="imatges/image041.png" alt="Gráfico de barras con contraste insuficiente."></p>
+
+<p class="caption">Imagen 38. Ejemplo de mala práctica: el color de fondo no tiene un contraste suficiente con los elementos textuales del gráfico. Fuente: elaboración propia.</p>
+</div>
+
+<div class="ejemplocorrecto">
+<p>Ejemplo correcto</p>
+
+<p><img src="imatges/image042.png" alt="Gráfico de barras con suficiente contraste."></p>
+
+<p class="caption">Imagen  39.Ejemplo de buena práctica: el color de fondo tiene un contraste suficiente con los elementos textuales del gráfico. Fuente: elaboración propia.</p>
+</div>
+
+<p>Es muy importante evitar añadir elementos flotantes en el gráfico (por ejemplo, otras imágenes o formas predefinidas), ya que pueden confundir a los usuarios de lectores de pantalla.</p>
+
+<p>Otro elemento que puede influir negativamente, especialmente en la visibilidad de los datos numéricos que acompañan a las marcas del gráfico son las líneas de cuadrícula. En este sentido, hay que valorar si realmente ayudan al lector a procesar los datos más rápidamente, así como garantizar que no compiten visualmente con los datos [1]. En el caso de que las necesitemos incorporar, deberemos asegurar un contraste suficiente entre valores y líneas.</p>
+
+<div class="ejemploincorrecto">
+<p>Ejemplo incorrecto.</p>
+
+<p><img src="imatges/image043.png" alt="Ejemplo de mala práctica en el uso de la cuadrícula."></p>
+
+<p class="caption">Imagen 40. Ejemplo de mala práctica: las líneas de la cuadrícula se superponen con las etiquetas de datos. Por otro lado, son tan gruesas que compiten visualmente con la línea. Fuente: elaboración propia.</p>
+</div>
+<div class="ejemplocorrecto">
+<p>Ejemplo correcto.</p>
+
+<p><img src="imatges/image044.png" alt="Gráfico sin cuadrícula."></p>
+
+<p class="caption">Imagen 41. Ejemplo de buena práctica: se han eliminado líneas de cuadrícula innecesarias. Fuente: elaboración propia.</p>
+
+<p><img src="imatges/image045.png" alt="Etiquetas de datos con alto contraste."></p>
+
+<p class="caption">Imagen 42. Ejemplo de buena práctica: se ha reducido el grosor de las líneas de la cuadrícula y se ha añadido un fondo de color a las etiquetas de datos para garantizar su contraste con el fondo y la cuadrícula. Fuente: elaboración propia.</p>
+</div>
+<p>Aunque cada vez son menos populares, los gráficos en 3D todavía se utilizan en muchas publicaciones. El principal problema derivado de representar las marcas (barras, sectores...) de un gráfico en tres dimensiones es que <em>el efecto de profundidad</em> nos presenta los objetos más cercanos como si fueran más grandes, <em>provocando una distorsión</em> de las medidas reales de cada elemento. En otros tipos de gráficos como los de barras, <em>resulta complicado entender el valor</em> que representa cada barra, ya que el lector no sabe cuál de las dos líneas del extremo de la barra (la que se ve más cerca, o la más lejana) es la que marca el valor de la variable.</p>
+
+<div class="ejemploincorrecto">
+<p>Ejemplo incorrecto.</p>
+
+<p><img src="imatges/image046.png" alt="Gráfico 3D"></p>
+
+<p>Imagen 43. En los gráficos en tres dimensiones, resulta imposible saber qué línea representa el valor de la variable. Por otro lado, también resulta más complicado aproximar el valor exacto que en un gráfico en dos dimensiones.</p>
+</div>
+
+<h2 id="1.6">1.6 Plantillas</h2>
+
+<p><em>Las plantillas son hojas de cálculo previamente diseñadas para un uso determinado y recurrente</em>. Por
+ejemplo, una plantilla para crear facturas u otra para generar informes de resultados contables. Excel incluye algunas plantillas preinstaladas, pero también podemos descargar otras de Internet o generar nuevas desde cero.</p>
+
+<p>Crear plantillas en nuestro entorno de trabajo nos permite ahorrar tiempo y asegurarnos de que algunas de las características de accesibilidad que se tratan en este documento quedan integradas en todos los documentos que generamos.</p>
+
+<h3>1.6.1 Pasos a seguir</h3>
+
+<h4>1.6.1.1 Paso 1. Crear un nuevo documento.</h4>
+
+<p class="comando">Menú: Archivo – Libro en blanco</p>
+
+<h4>1.6.1.2 Paso 2. Guardar la plantilla.</h4>
+
+<p><img src="imatges/image047a.png" alt="Carpeta - DOcumentos - Plantillas personalizadas de Office"></p>
+<p><img src="imatges/image047b.png" alt="Guardar"></p>
+<p class="caption">Imagen 44. Cuadro de diálogo para guardar una plantilla.</p>
+
+<p><em>Archivo – Guardar.</em></p>
+
+<p>Escoge la ubicación en la que quieres guardar la plantilla, indica un nombre para la plantilla y selecciona el tipo de fichero &quot;Plantilla dExcel (*.xltx) en el cuadro combinado. Finalmente, puedes añadir etiquetas  representativas para la plantilla antes de apretar el botón &quot;Guarda&quot;.</p>
+
+<p>En este apartado se explica cómo empezar a trabajar en un documento a partir de una plantilla generada anteriormente. En el caso de que queramos empezar a trabajar en un libro de trabajo en blanco, es necesario que vaya a <em>Fichero</em> y, a continuación, selecciones la opción <em>&quot;Libro de trabajo en blanco&quot;</em>.</p>
+
+<h3>1.6.2 Pasos a seguir</h3>
+
+<h4>1.6.2.1 Paso 1. Crear un nuevo documento.</h4>
+
+<p>Crea un nuevo documento a partir de una plantilla.</p>
+
+<h4>1.6.2.2 Paso 2. Seleccionar la plantilla</h4>
+
+<p class="comando">Menú: Archivo – Nuevo – Personal.</p>
+
+<p><img src="imatges/image048.png" alt="Menú: Archivo - Crea - Personal"></p>
+
+<p>Imagen 45. Opción de menú para crear un nuevo documento Excel a partir de una plantilla personal.</p>
+
+<p>Excel permite no sólo crear plantillas para las hojas de cálculos, sino que también podemos guardar los gráficos como plantillas.</p>
+
+<h3>1.6.3 Pasos a seguir</h3>
+
+<h4>1.6.3.1 Paso 1. Seleccionar el gráfico.</h4>
+
+<p>Selecciona el gráfico – Clic derecho – Llama y guarda como plantilla.</p>
+
+<h4>1.6.3.2 Paso 2. Guardar</h4>
+
+<p>Elige un nombre para la plantilla y guardo.</p>
+
+<p>Por defecto, en Windows, Excel guardará la plantilla en el directorio <em> C:\Users\nombre-usuario\AppData\Roaming\Microsoft\Templates\Charts</em>.</p>
+
+<p>Conviene mantener las plantillas en este directorio para que Excel las encuentre cuando necesitamos cargarlas.</p>
+
+<p><img src="imatges/image049.png" alt="Menú contextual: Denomina y guarda como plantilla."></p>
+
+<p>Imagen 46. Guardar como plantilla un gráfico nos permitirá aplicar posteriormente estos estilos a nuevos gráficos del mismo tipo.</p>
+
+<p>Para cargar la plantilla de un gráfico debo seguir los pasos que se indican a continuación.</p>
+
+<h3>1.6.4 Pasos a seguir</h3>
+
+<h4>1.6.4.1 Paso 1. Seleccionar los datos.</h4>
+
+<p>Selecciona la tabla que contiene los datos que quieres representar en forma de gráfico.</p>
+
+<h4>1.6.4.2 Paso 2. Insertar el gráfico</h4>
+
+<p class="comando">Menú: Insertar – 2) Gráficos recomendados – 3) Pestaña &quot;Todos los gráficos&quot; –4) Opción &quot;Plantillas&quot; – 5) Seleccionar la
+plantilla.</p>
+
+<p><img src="imatges/image050.png" alt="Seleccionar datos - Inserción - Gráficos recomendados - Pestaña &quot;Todos los gráficos&quot; - Opción &quot;Plantillas&quot;."></p>
+
+<p class="caption">Imagen 47. Desde la opción de gráficos recomendados, podéis acceder a las plantillas guardadas.</p>
+
+<p>Una vez seleccionada la plantilla, solo hay que activar el botón &quot;De acuerdo&quot; y el gráfico cargará la plantilla guardada. Sin embargo, habrá que adaptar ciertos elementos como el formato del título o el de las etiquetas de los ejes que no se conservan en la plantilla.</p>
+
+<p>A pesar de basaros en plantillas accesibles, el nuevo contenido de cada nuevo documento deberá seguir el resto de pautas que se explican en esta guía para asegurar la accesibilidad total del documento.</p>
+
+<h2 id="1.7">1.7 Validación de la accesibilidad</h2>
+
+<p>Excel dispone de una herramienta de validación de la accesibilidad automática que nos ayuda a la hora de detectar posibles problemas de accesibilidad en nuestro documento. El validador de accesibilidad del Microsoft Excel clasifica los problemas de accesibilidad como:</p>
+
+<ul>
+<li><em>Errores</em>: barrera que dificulta o imposibilita percibir o comprender el contenido a determinadas personas con discapacidad.</li>
+<li><em>Advertencias</em>: barrera que, en algunos casos, puede dificultar percibir o comprender el contenido a determinadas personas con discapacidad, pero que podemos obviar en determinados casos.</li>
+</ul>
+
+<h3>1.7.1 Pasos a seguir</h3>
+
+<h4>1.7.1.1 Paso 1. Comprobar la accesibilidad.</h4>
+
+<p class="comando">Menú: Revisar – Comprobar la accesibilidad.</p>
+
+<p><img src="imatges/image051.png" alt="Menú: Fichero - Información - Opción Comprueba si hay problemas - Comprueba la accesibilidad."></p>
+
+<p class="caption">Imagen 48. Cuadro de diálogo de la comprobación de accesibilidad.</p>
+
+<p>Una vez seleccionada la opción de comprobación de la accesibilidad, Excel mostrará el resultado de la validación en la parte derecha de la interfaz.</p>
+
+<p><img src="imatges/image052.png" alt="Errores y avisos."></p>
+
+<p class="caption">Imagen 49. Resultados del validador de accesibilidad.</p>
+
+<p>Si marcaste la casilla de verificación &quot;Mantiene el verificador de accesibilidad en ejecución mientras trabajo&quot;, puedes ver los errores y advertencias que el validador detecta en tiempo real.</p>
+
+<h2 id="1.8">1.8 Exportación</h2>
+
+<p>En muchas ocasiones, el documento final desde el que se distribuirá el gráfico no es la misma hoja de cálculo, sino que simplemente usamos Excel para generar esta visualización y exportarla en formato de imagen para emplearla en un sitio web o documento de texto. En este apartado, se explica cómo exportar un gráfico a un fichero Word y como imagen vectorial, manteniendo las máximas características de accesibilidad.</p>
+
+<h3>1.8.1 Exportar gráficos a un documento MS Word</h3>
+
+<p>Las últimas versiones del Microsoft Excel y del Microsoft Word ofrecen múltiples opciones de integración de datos, entre ellas la posibilidad de insertar un gráfico vectorial generado con Excel dentro de un documento Word.</p>
+
+<h4>1.8.1.1 Pasos a seguir</h4>
+
+<h5>Paso 1. Seleccionar el gráfico.</h5>
+
+<p>Selecciona el gráfico que quieres exportar y pulsa la  combinación de teclas Ctrl +C. Alternativamente, puedes seleccionar la opción de menú Inicio – Copia.</p>
+
+<h4>1.8.1.2 Pasos a seguir</h4>
+
+<h5>Paso 1. Pegar el gráfico.</h5>
+
+<p>Pega el gráfico copiado en el documento Word mediante la combinación de teclas Ctrl + V. Alternativamente, puedes utilizar la opción de menú Inicio – Pegar.</p>
+
+<p>Al pegar el gráfico, disponemos de las siguientes opciones:</p>
+<ul>
+<li><em>Utiliza el formato de origen e incrusta el libro de trabajo</em>: tablas y gráfico se copian en el documento Word. Se mantiene el formato del fichero Excel desde el que copiamos el gráfico.</li>
+
+<li><em>Conserva el formato de origen e incrusta el libro de trabajo</em>: tablas y gráfico se copian en el documento Word. Se mantiene el diseño o tema original.</li>
+
+<li><em>Utiliza el tema de destino y enlaza los datos</em>: el gráfico se copia en el documento Word, pero sigue vinculado a los datos del fichero Excel, y si estos cambian, se actualizará.  El formato se adapta al de la plantilla Word donde copiamos el gráfico.</li>
+
+<li><em>Conserva el formato de origen y enlaza los datos</em>: el gráfico se copia en el documento Word, pero sigue vinculado a los datos del fichero Excel, y si estos cambian se actualizará. En cuanto al formato, se mantiene el diseño o tema original</li>
+
+<li><em>Imagen</em>: es la opción menos accesible de todas. La imagen vectorial se convierte en una imagen en formato de mapa de bits que ya no podremos editar. Si se opta por esta imagen, hay que complementarla con un texto alternativo o una descripción larga, según el caso.</li>
+</ul>
+<p><img src="imatges/image053.png" alt="Grupo de botones con las cinco opciones para pegar gráficos de Excel a Word."></p>
+
+<p class="caption">Imagen 50. De izquierda a derecha, opciones: Utiliza el formato de origen e incrusta el libro de trabajo, Conserva el formato de origen e incrusta el libro de trabajo, Utiliza el tema de destino y enlaza los datos, conserva el formato de origen y enlaza los datos.</p>
+
+<p>Es importante tener presente que en el caso de mantener el gráfico vinculado al fichero Excel, cualquier modificaciónen la hoja de cálculo se verá reflejada en el fichero Word.</p>
+
+<h3>1.8.2 Exportar a formato vectorial</h3>
+
+<p>El formato vectorial es idóneo por accesibilidad, porque si el usuario amplía el gráfico, éste sigue manteniendo la calidad (no se pixela). Si tenemos que incluir el gráfico en una página web,este será el formato más adecuado.</p>
+
+<p>A pesar de generarlos nativamente en formato vectorial, Microsoft Excel no dispone de ninguna opción específica para exportar los gráficos en este formato.</p>
+
+<p>Un truco para resolver esta carencia consiste en convertir el documento a formato PDF para, posteriormente, tratarlo con un programa de edición de imágenes vectoriales (Adobe Illustrator, Inkscape...).</p>
+
+<h4>1.8.2.1 Pasos a seguir</h4>
+
+<h5>Paso 1. </h5>
+<p>Seleccionar el gráfico y guardar el documento.</p>
+
+<p><img src="imatges/image054.png" alt="Menú: Archivo - Guardar una copia - Guardar - Más opciones"></p>
+<p><img src="imatges/image055.png" alt="Opciones - Todo - Gráfico seleccionado."></p>
+<p class="caption">Imagen 51. Guardar el documento PDF.</p>
+
+<p>Una vez tengamos el gráfico en PDF podemos convertirlo a SVG con las herramientas mencionadas.</p>
+
+<h2>1.9 Conclusiones</h2>
+
+<p>Los gráficos estadísticos forman parte fundamental del currículo de muchas asignaturas en diferentes niveles formativos. Asegurar su accesibilidad es fundamental para garantizar el derecho de los estudiantes con diversidad funcional a acceder en igualdad de condiciones a la educación. Más aún en un contexto en el que la alfabetización en datos, entendida como el conjunto de habilidades para leer, interpretar, crear y comunicar datos, son la protagonista de una sociedad protagonizada por una ingente cantidad de datos generados por todo tipo de organizaciones, gobiernos y personas.</p>
+
+<h2>1.10  Referencias</h2>
+
+<p lang="EN-US">1. Knaflic, Cole Nussbaumer (2015). Storytelling with data: a data visualization guide for business professionals. Hoboken, New Jersey: John Wiley &amp; Sons.</p>
+
+<p>2. Moreno, Lourdes; Martínez, Paloma; González, Yolanda (2014). Guía para elaborar documentación digital accesible: recomendaciones para Word, PowerPoint y Excel de Microsoft Office 2010. Madrid: CENTAC.</p>
+
+<p lang="EN-US">3. Evergreen, Stephanie; Metzner, Chris (2013). &quot;Design principles for data visualization in evaluation&quot;. En: Azzam T, Evergreen S (eds.) Data visualization, part 2. New directions for evaluation. No. 140, p. 5-20.</p>
+
+<h2>1.11 Bibliografía recomendada</h2>
+
+<p>La recopilación bibliográfica que continúa no se centra específicamente en la accesibilidad de los gráficos estadísticos, ni en el Microsoft Excel como herramienta de referencia para su creación. Sin embargo, se trata de manuales que recogen buenas prácticas en la creación de gráficos estadísticos que benefician a toda la audiencia con independencia de su diversidad funcional.</p>
+
+<ol>
+<li lang="EN-US" id="bib1">Berinato, Scott (2016). Good charts: the HBR guide to making smarter, more persuasive data visualizations. Boston, Massachusetts: Harvard Business Review Press.</li>
+
+<li lang="EN-US" id="bib2">Evergreen, Stephanie D. H. (2020). Effective data visualization: the right chart for the right data. 2nd ed. Los Ángeles: SAGE.</li>
+
+<li id="bib3" lang="CA-CA">Generalitat de Cataluña (2018). <a href="http://atenciociutadana.gencat.cat/web/.content/manuals/guia-visualitzacio-dades.pdf">Guia de visualització de dades</a>. Barcelona: Generalitat de Cataluña.</li>
+
+<li lang="EN-US" id="bib4">Knaflic, Cole Nussbaumer (2015). Storytelling con datos: visualización de datos para profesionales. Hoboken, New Jersey: John Wiley &amp; Sons.</li>
+
+<li lang="EN-US" id="bib5">Wilke, Claus O. (2019). Fundamentals of data visualization: a primer on making informative and compelling figures. Sebastopol, CA: O'Reilly Media.</li>
+</ol>
+</body>
+</html>
